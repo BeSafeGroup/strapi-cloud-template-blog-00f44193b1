@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_feature_groups_feature_groups",
+  "info": {
+    "displayName": "featureGroup",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "feature": {
+      "type": "json"
+    }
+  }
+}
