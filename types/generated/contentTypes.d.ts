@@ -847,12 +847,23 @@ export interface ApiCountryCountry extends Schema.SingleType {
     singularName: 'country';
     pluralName: 'countries';
     displayName: 'country';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
   attributes: {
-    country: Attribute.JSON;
+    country: Attribute.JSON &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -868,6 +879,12 @@ export interface ApiCountryCountry extends Schema.SingleType {
       'admin::user'
     > &
       Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::country.country',
+      'oneToMany',
+      'api::country.country'
+    >;
+    locale: Attribute.String;
   };
 }
 
