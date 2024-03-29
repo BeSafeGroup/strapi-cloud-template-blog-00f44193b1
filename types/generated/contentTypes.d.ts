@@ -894,6 +894,7 @@ export interface ApiPolicyPolicy extends Schema.CollectionType {
     singularName: 'policy';
     pluralName: 'policies';
     displayName: 'Policy';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -928,7 +929,7 @@ export interface ApiPolicyPolicy extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    link: Attribute.String &
+    insLink: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -941,6 +942,12 @@ export interface ApiPolicyPolicy extends Schema.CollectionType {
         };
       }>;
     featureGroups: Attribute.Component<'feature-group.feature-groups', true> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    claimLink: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;

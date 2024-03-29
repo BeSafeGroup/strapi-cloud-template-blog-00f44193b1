@@ -4,7 +4,8 @@
   "info": {
     "singularName": "policy",
     "pluralName": "policies",
-    "displayName": "Policy"
+    "displayName": "Policy",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -47,7 +48,7 @@
       },
       "type": "string"
     },
-    "link": {
+    "insLink": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -73,6 +74,14 @@
         }
       },
       "component": "feature-group.feature-groups"
+    },
+    "claimLink": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
