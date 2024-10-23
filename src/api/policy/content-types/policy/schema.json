@@ -91,13 +91,13 @@
       },
       "type": "string"
     },
-    "claimInstruction": {
+    "claimInstructions": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "richtext"
+      "type": "blocks"
     }
   }
 }

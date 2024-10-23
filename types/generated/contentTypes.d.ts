@@ -959,7 +959,7 @@ export interface ApiPolicyPolicy extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    claimInstruction: Attribute.RichText &
+    claimInstructions: Attribute.Blocks &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
