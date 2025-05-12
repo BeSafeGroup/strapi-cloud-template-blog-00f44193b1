@@ -114,6 +114,19 @@
         }
       },
       "type": "string"
+    },
+    "productType": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "Viaggio standard",
+        "Viaggio plus",
+        "Viaggio premium"
+      ]
     }
   }
 }
